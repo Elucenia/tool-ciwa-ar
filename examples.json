@@ -1,0 +1,133 @@
+[
+  {
+    "label": "Sem sintomas: 0",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sintomas leves: 7 (leve)",
+    "input": {
+      "nausea": "1",
+      "tremor": "1",
+      "sudorese": "1",
+      "ansiedade": "2",
+      "agitacao": "1",
+      "cefaleia": "1",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "score": 7,
+      "level": "low"
+    },
+    "originalInput": {
+      "nausea": "1",
+      "tremor": "1",
+      "sudorese": "1",
+      "ansiedade": "2",
+      "agitacao": "1",
+      "cefaleia": "1"
+    },
+    "expandedZeroOptions": [
+      "tatil",
+      "auditivo",
+      "visual",
+      "orientacao"
+    ]
+  },
+  {
+    "label": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+    "input": {
+      "nausea": "1",
+      "tremor": "4",
+      "sudorese": "4",
+      "ansiedade": "4",
+      "agitacao": "3",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "score": 16,
+      "level": "mid"
+    },
+    "originalInput": {
+      "nausea": "1",
+      "tremor": "4",
+      "sudorese": "4",
+      "ansiedade": "4",
+      "agitacao": "3"
+    },
+    "expandedZeroOptions": [
+      "tatil",
+      "auditivo",
+      "visual",
+      "cefaleia",
+      "orientacao"
+    ]
+  },
+  {
+    "label": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+    "input": {
+      "tremor": "7",
+      "sudorese": "4",
+      "ansiedade": "5",
+      "agitacao": "4",
+      "tatil": "3",
+      "visual": "2",
+      "orientacao": "2",
+      "nausea": "0",
+      "auditivo": "0",
+      "cefaleia": "0"
+    },
+    "expected": {
+      "score": 27,
+      "level": "high"
+    },
+    "originalInput": {
+      "tremor": "7",
+      "sudorese": "4",
+      "ansiedade": "5",
+      "agitacao": "4",
+      "tatil": "3",
+      "visual": "2",
+      "orientacao": "2"
+    },
+    "expandedZeroOptions": [
+      "nausea",
+      "auditivo",
+      "cefaleia"
+    ]
+  }
+]
