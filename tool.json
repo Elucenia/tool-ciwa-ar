@@ -3,14 +3,15 @@
     "id": "ciwa-ar",
     "title": "CIWA-Ar",
     "short": "Gravidade da síndrome de abstinência do álcool",
+    "desc": "Escala CIWA-Ar: gravidade da síndrome de abstinência alcoólica em 10 itens (0 a 67), para orientar benzodiazepínico e local de tratamento.",
+    "lead": "Mede a gravidade da síndrome de abstinência do álcool em 10 itens e orienta o uso de benzodiazepínico pelos sintomas e o nível de cuidado.",
+    "kind": "Escore",
     "spec": [
       "psiquiatria",
       "medicina-de-emergencia",
       "clinica-medica",
       "medicina-intensiva"
     ],
-    "desc": "Escala CIWA-Ar: gravidade da síndrome de abstinência alcoólica em 10 itens (0 a 67), para orientar benzodiazepínico e local de tratamento.",
-    "lead": "Mede a gravidade da síndrome de abstinência do álcool em 10 itens e orienta o uso de benzodiazepínico pelos sintomas e o nível de cuidado.",
     "fields": [
       [
         "nausea",
@@ -180,61 +181,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "CIWA-Ar",
-      "unit": "de 67",
-      "bands": [
-        [
-          0,
-          "low",
-          "Abstinência leve (&lt; 10)",
-          "Em geral não requer medicação adicional; mantenha a reavaliação periódica."
-        ],
-        [
-          10,
-          "mid",
-          "Abstinência moderada (10 a 19)",
-          "Benzodiazepínico guiado por sintomas e reavaliação frequente da escala."
-        ],
-        [
-          20,
-          "high",
-          "Abstinência grave (≥ 20)",
-          "Tratamento em ambiente hospitalar, com benzodiazepínico e vigilância para convulsões e delirium tremens."
-        ]
-      ]
-    },
     "formula": "<p>Nove itens de 0 a 7 (náuseas/vômitos, tremor, sudorese, ansiedade, agitação, distúrbios táteis, auditivos e visuais, cefaleia) e orientação de 0 a 4. Total: 0 a 67. Os textos das opções são as âncoras do instrumento; valores intermediários ficam a critério do examinador.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Gravidade",
-        "Conduta geral"
-      ],
-      [
-        "&lt; 10",
-        "Leve",
-        "Em geral sem medicação adicional"
-      ],
-      [
-        "10 a 19",
-        "Moderada",
-        "Benzodiazepínico guiado por sintomas"
-      ],
-      [
-        "≥ 20",
-        "Grave",
-        "Internação; risco de convulsão e delirium"
-      ]
-    ],
-    "table_note": "Sullivan 1989: escores &lt; 10 em geral dispensam medicação adicional. O consenso brasileiro (Laranjeira 2000) classifica escore ≥ 20 como síndrome de abstinência grave (nível II), com indicação de tratamento hospitalar.",
-    "tips": [
-      "A CIWA-Ar exige que o paciente consiga se comunicar: não use em paciente sedado, intubado ou em delirium estabelecido (prefira escalas de sedação/agitação).",
-      "Reavalie a cada 1 a 4 horas nas primeiras 24 a 72 h; o pico da abstinência costuma ocorrer entre 24 e 72 h após a última dose.",
-      "Sintomas de abstinência podem ser mimetizados por hipoglicemia, infecção, hepatopatia descompensada ou abstinência de outras drogas: investigue.",
-      "Todo paciente com abstinência alcoólica deve receber <strong>tiamina</strong> antes da glicose, para prevenir a encefalopatia de Wernicke.",
-      "Em idosos ou hepatopatas, prefira lorazepam ou oxazepam aos benzodiazepínicos de meia-vida longa."
-    ],
     "sources": [
       [
         "Sullivan JT et al. Assessment of alcohol withdrawal: the revised Clinical Institute Withdrawal Assessment for Alcohol scale (CIWA-Ar). Br J Addict, 1989.",
@@ -311,84 +258,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 67",
-      "label": "CIWA-Ar",
-      "fields": [
-        [
-          "nausea",
-          "sel",
-          0
-        ],
-        [
-          "tremor",
-          "sel",
-          0
-        ],
-        [
-          "sudorese",
-          "sel",
-          0
-        ],
-        [
-          "ansiedade",
-          "sel",
-          0
-        ],
-        [
-          "agitacao",
-          "sel",
-          0
-        ],
-        [
-          "tatil",
-          "sel",
-          0
-        ],
-        [
-          "auditivo",
-          "sel",
-          0
-        ],
-        [
-          "visual",
-          "sel",
-          0
-        ],
-        [
-          "cefaleia",
-          "sel",
-          0
-        ],
-        [
-          "orientacao",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Abstinência leve (&lt; 10)",
-          "Em geral não requer medicação adicional; mantenha a reavaliação periódica."
-        ],
-        [
-          10,
-          "mid",
-          "Abstinência moderada (10 a 19)",
-          "Benzodiazepínico guiado por sintomas e reavaliação frequente da escala."
-        ],
-        [
-          20,
-          "high",
-          "Abstinência grave (≥ 20)",
-          "Tratamento em ambiente hospitalar, com benzodiazepínico e vigilância para convulsões e delirium tremens."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -397,17 +266,440 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T15:17:41.432Z",
+      "total": 4229,
+      "passed": 4229,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "a6c6313075c881fd5982daabf7eb2989f3da13b5ad9753b215d31b1480deb7b5",
+        "total": 4229,
+        "sourceContextCount": 4229,
+        "expectedEvidence": {
+          "file": "reports/review-20261003/six-classification-peer-expectations-final25.json",
+          "sha256": "f224a891b06428ed29426f073e0cc8d1ad5ad2d56b78646c85243237166bf001"
+        },
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+          "sha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe"
+        },
+        "packagingRequirement": "Copy this complete bank into the fresh tool package; frozen final24 packages do not contain this source evidence."
+      },
+      "scope": "Only nine item domains 0–7 and orientation 0–4 with integer addition. 4,229 synthetic vectors, not all 671,088,640 valid vectors; examiner judgment, translated instrument psychometrics, communication eligibility and medication thresholds not reviewed.",
+      "source": {
+        "tool": "ciwa-ar",
+        "url": "https://www.researchgate.net/publication/20558026_Assessment_of_Alcohol_Withdrawal_The_Revised_Clinical_Institute_Withdrawal_Assessment_for_Alcohol_Scale_CIWA-Ar",
+        "edition": "Sullivan1989 Appendix",
+        "access": "Indexed original-paper Appendix text read; UMEM two-page reproduction additionally opened, local page2 visually inspected",
+        "readScope": "Nine item domains0–7 and orientation0–4, max67, integer addition. Not examiner judgment, drug thresholds, full671088640 domain, professional wording or rights determination."
+      },
+      "evidencePath": "reports/review-20261003/six-classification-source-oracles-final25-r2.json",
+      "evidenceSha256": "06dd6f382c1dd3555db037b3b35ee7d0e4709207ad0a28df0de64fefc11038e2",
+      "peerEvidencePath": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+      "peerEvidenceSha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/ciwa-ar/calculator.js",
+          "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+          "importedAt": "2026-10-04T15:17:36.199Z",
+          "sourceContexts": 4229,
+          "distinctApiInputs": 4229,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/ciwa-ar/calculator.js",
+          "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+          "importedAt": "2026-10-04T15:17:36.493Z",
+          "sourceContexts": 4229,
+          "distinctApiInputs": 4229,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        },
+        {
+          "file": "apps/command-center/private/tool-code/ciwa-ar/calculator.js",
+          "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+          "importedAt": "2026-10-04T15:17:37.032Z",
+          "sourceContexts": 4229,
+          "distinctApiInputs": 4229,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        }
+      ],
+      "sourceContextCount": 4229,
+      "uniqueApiInputCount": 4229,
+      "actualAdapterExecutions": 12687,
+      "isolatedChromiumExecutions": 4229,
+      "qualifications": [
+        "Only nine item domains 0–7 and orientation 0–4 with integer addition. 4,229 synthetic vectors, not all 671,088,640 valid vectors; examiner judgment, translated instrument psychometrics, communication eligibility and medication thresholds not reviewed.",
+        "CIWA4229 patterns are pairwise/boundary/supplemental coverage, not all671088640 possible inputs.",
+        "Fisher10 source-feature contexts map to five unique API grade-code inputs. The feature-to-grade assignment was independently reconstructed from Table1 by the test; it is not implemented as an automated CT classifier.",
+        "WFNS GCS15 plus deficit has no original table assignment and is recorded only as a local-fallback observation.",
+        "Forrest/GOS/Fisher inputs represent classifications selected before use; numeric/code echo is not diagnosis, prognosis, risk calibration or therapeutic approval.",
+        "Original source cases, historical expected values and tolerances remain unchanged.",
+        "Original historical cases, expected values and tolerances remain unchanged. Separate Fisher source-description amendment changes only the explicitly recorded description/formula/version metadata; all clinical/professional/rights/release approval flags remain unchanged. Passed status describes only the named integer/code scope."
+      ],
+      "unresolvedSourceFindings": [],
+      "excludedObservations": [],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CIWAAr/Sullivan 1989:10 itens, total 0–67; orientação 0–4",
+    "implementationVersion": "ciwa-ar@native-2026-10-03+29e2b50399fd",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2597811/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Nove itens de 0 a 7 (náuseas/vômitos, tremor, sudorese, ansiedade, agitação, distúrbios táteis, auditivos e visuais, cefaleia) e orientação de 0 a 4. Total: 0 a 67. Os textos das opções são as âncoras do instrumento; valores intermediários ficam a critério do examinador.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "nausea",
+            "label": "Náuseas e vômitos",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem náusea e sem vômito",
+              "1": "1 – Náusea leve, sem vômito",
+              "2": "2",
+              "3": "3",
+              "4": "4 – Náusea intermitente com ânsia de vômito",
+              "5": "5",
+              "6": "6",
+              "7": "7 – Náusea constante, ânsia frequente e vômitos"
+            }
+          },
+          {
+            "key": "tremor",
+            "label": "Tremor (braços estendidos e dedos afastados)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem tremor",
+              "1": "1 – Não visível, mas sentido ponta a ponta dos dedos",
+              "2": "2",
+              "3": "3",
+              "4": "4 – Moderado, com os braços estendidos",
+              "5": "5",
+              "6": "6",
+              "7": "7 – Grave, mesmo com os braços não estendidos"
+            }
+          },
+          {
+            "key": "sudorese",
+            "label": "Sudorese paroxística",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem suor visível",
+              "1": "1 – Suor quase imperceptível, palmas úmidas",
+              "2": "2",
+              "3": "3",
+              "4": "4 – Gotas de suor evidentes na testa",
+              "5": "5",
+              "6": "6",
+              "7": "7 – Sudorese profusa"
+            }
+          },
+          {
+            "key": "ansiedade",
+            "label": "Ansiedade",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem ansiedade, à vontade",
+              "1": "1 – Levemente ansioso",
+              "2": "2",
+              "3": "3",
+              "4": "4 – Moderadamente ansioso ou reservado (ansiedade inferida)",
+              "5": "5",
+              "6": "6",
+              "7": "7 – Equivalente a estado de pânico agudo"
+            }
+          },
+          {
+            "key": "agitacao",
+            "label": "Agitação",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Atividade normal",
+              "1": "1 – Um pouco mais de atividade que o normal",
+              "2": "2",
+              "3": "3",
+              "4": "4 – Moderadamente inquieto",
+              "5": "5",
+              "6": "6",
+              "7": "7 – Anda de um lado para o outro ou se debate constantemente"
+            }
+          },
+          {
+            "key": "tatil",
+            "label": "Distúrbios táteis (coceira, formigamento, queimação, sensação de insetos na pele)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Ausente",
+              "1": "1 – Muito leve",
+              "2": "2 – Leve",
+              "3": "3 – Moderado",
+              "4": "4 – Alucinações moderadamente graves",
+              "5": "5 – Alucinações graves",
+              "6": "6 – Alucinações extremamente graves",
+              "7": "7 – Alucinações contínuas"
+            }
+          },
+          {
+            "key": "auditivo",
+            "label": "Distúrbios auditivos (sons mais altos ou ásperos, ouvir coisas que não existem)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Ausente",
+              "1": "1 – Muito leve",
+              "2": "2 – Leve",
+              "3": "3 – Moderado",
+              "4": "4 – Alucinações moderadamente graves",
+              "5": "5 – Alucinações graves",
+              "6": "6 – Alucinações extremamente graves",
+              "7": "7 – Alucinações contínuas"
+            }
+          },
+          {
+            "key": "visual",
+            "label": "Distúrbios visuais (luz mais forte, cores diferentes, ver coisas que não existem)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Ausente",
+              "1": "1 – Muito leve",
+              "2": "2 – Leve",
+              "3": "3 – Moderado",
+              "4": "4 – Alucinações moderadamente graves",
+              "5": "5 – Alucinações graves",
+              "6": "6 – Alucinações extremamente graves",
+              "7": "7 – Alucinações contínuas"
+            }
+          },
+          {
+            "key": "cefaleia",
+            "label": "Cefaleia ou sensação de cabeça cheia",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Ausente",
+              "1": "1 – Muito leve",
+              "2": "2 – Leve",
+              "3": "3 – Moderada",
+              "4": "4 – Moderadamente grave",
+              "5": "5 – Grave",
+              "6": "6 – Muito grave",
+              "7": "7 – Extremamente grave"
+            }
+          },
+          {
+            "key": "orientacao",
+            "label": "Orientação e sensório",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Orientado e faz adições seriadas",
+              "1": "1 – Não faz adições seriadas ou incerto quanto à data",
+              "2": "2 – Desorientado quanto à data por até 2 dias",
+              "3": "3 – Desorientado quanto à data por mais de 2 dias",
+              "4": "4 – Desorientado quanto ao lugar e/ou à pessoa"
+            }
+          }
+        ],
+        "hash": "803884dbfda8689c86d94b4f420d4e856b78a94e1dedfb2103b81529cff2cf3c"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Sullivan JT et al. Assessment of alcohol withdrawal: the revised Clinical Institute Withdrawal Assessment for Alcohol scale (CIWA-Ar). Br J Addict, 1989.",
+          "url": "https://doi.org/10.1111/j.1360-0443.1989.tb00737.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Assessment of alcohol withdrawal: the revised clinical institute withdrawal assessment for alcohol scale (CIWA-Ar).",
+            "year": "1989",
+            "firstPublicationDate": "1989-11-01",
+            "doi": "10.1111/j.1360-0443.1989.tb00737.x",
+            "pmid": "2597811",
+            "journal": "British journal of addiction",
+            "authors": "Sullivan JT, Sykora K, Schneiderman J, Naranjo CA, Sellers EM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2597811/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "fb4bbbdab8f4cbcc613781c71f794e60c20518dbf0897b67c681800188e11841",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Laranjeira R et al. Consenso sobre a Síndrome de Abstinência do Álcool (SAA) e o seu tratamento. Rev Bras Psiquiatr, 2000.",
+          "url": "https://doi.org/10.1590/S1516-44462000000200006",
+          "class": "publisher-deposited-bibliography-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publisherDepositedMetadata": {
+            "title": "Consenso sobre a Síndrome de Abstinência do Álcool (SAA) e o seu tratamento",
+            "doi": "10.1590/s1516-44462000000200006",
+            "year": 2000,
+            "publisher": "EDITORA SCIENTIFIC",
+            "journal": "Revista Brasileira de Psiquiatria",
+            "authors": [
+              "Ronaldo Laranjeira",
+              "Sérgio Nicastri",
+              "Claudio Jerônimo",
+              "Ana C Marques"
+            ],
+            "url": "https://doi.org/10.1590/s1516-44462000000200006"
+          },
+          "publication": {
+            "title": "Consenso sobre a Síndrome de Abstinência do Álcool (SAA) e o seu tratamento",
+            "doi": "10.1590/s1516-44462000000200006",
+            "year": 2000,
+            "publisher": "EDITORA SCIENTIFIC",
+            "journal": "Revista Brasileira de Psiquiatria",
+            "authors": [
+              "Ronaldo Laranjeira",
+              "Sérgio Nicastri",
+              "Claudio Jerônimo",
+              "Ana C Marques"
+            ],
+            "url": "https://doi.org/10.1590/s1516-44462000000200006"
+          }
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T15:17:41.432Z",
+        "total": 4229,
+        "passed": 4229,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "a6c6313075c881fd5982daabf7eb2989f3da13b5ad9753b215d31b1480deb7b5",
+          "total": 4229,
+          "sourceContextCount": 4229,
+          "expectedEvidence": {
+            "file": "reports/review-20261003/six-classification-peer-expectations-final25.json",
+            "sha256": "f224a891b06428ed29426f073e0cc8d1ad5ad2d56b78646c85243237166bf001"
+          },
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+            "sha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe"
+          },
+          "packagingRequirement": "Copy this complete bank into the fresh tool package; frozen final24 packages do not contain this source evidence."
+        },
+        "scope": "Only nine item domains 0–7 and orientation 0–4 with integer addition. 4,229 synthetic vectors, not all 671,088,640 valid vectors; examiner judgment, translated instrument psychometrics, communication eligibility and medication thresholds not reviewed.",
+        "source": {
+          "tool": "ciwa-ar",
+          "url": "https://www.researchgate.net/publication/20558026_Assessment_of_Alcohol_Withdrawal_The_Revised_Clinical_Institute_Withdrawal_Assessment_for_Alcohol_Scale_CIWA-Ar",
+          "edition": "Sullivan1989 Appendix",
+          "access": "Indexed original-paper Appendix text read; UMEM two-page reproduction additionally opened, local page2 visually inspected",
+          "readScope": "Nine item domains0–7 and orientation0–4, max67, integer addition. Not examiner judgment, drug thresholds, full671088640 domain, professional wording or rights determination."
+        },
+        "evidencePath": "reports/review-20261003/six-classification-source-oracles-final25-r2.json",
+        "evidenceSha256": "06dd6f382c1dd3555db037b3b35ee7d0e4709207ad0a28df0de64fefc11038e2",
+        "peerEvidencePath": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+        "peerEvidenceSha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/ciwa-ar/calculator.js",
+            "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+            "importedAt": "2026-10-04T15:17:36.199Z",
+            "sourceContexts": 4229,
+            "distinctApiInputs": 4229,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/ciwa-ar/calculator.js",
+            "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+            "importedAt": "2026-10-04T15:17:36.493Z",
+            "sourceContexts": 4229,
+            "distinctApiInputs": 4229,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          },
+          {
+            "file": "apps/command-center/private/tool-code/ciwa-ar/calculator.js",
+            "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+            "importedAt": "2026-10-04T15:17:37.032Z",
+            "sourceContexts": 4229,
+            "distinctApiInputs": 4229,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          }
+        ],
+        "sourceContextCount": 4229,
+        "uniqueApiInputCount": 4229,
+        "actualAdapterExecutions": 12687,
+        "isolatedChromiumExecutions": 4229,
+        "qualifications": [
+          "Only nine item domains 0–7 and orientation 0–4 with integer addition. 4,229 synthetic vectors, not all 671,088,640 valid vectors; examiner judgment, translated instrument psychometrics, communication eligibility and medication thresholds not reviewed.",
+          "CIWA4229 patterns are pairwise/boundary/supplemental coverage, not all671088640 possible inputs.",
+          "Fisher10 source-feature contexts map to five unique API grade-code inputs. The feature-to-grade assignment was independently reconstructed from Table1 by the test; it is not implemented as an automated CT classifier.",
+          "WFNS GCS15 plus deficit has no original table assignment and is recorded only as a local-fallback observation.",
+          "Forrest/GOS/Fisher inputs represent classifications selected before use; numeric/code echo is not diagnosis, prognosis, risk calibration or therapeutic approval.",
+          "Original source cases, historical expected values and tolerances remain unchanged.",
+          "Original historical cases, expected values and tolerances remain unchanged. Separate Fisher source-description amendment changes only the explicitly recorded description/formula/version metadata; all clinical/professional/rights/release approval flags remain unchanged. Passed status describes only the named integer/code scope."
+        ],
+        "unresolvedSourceFindings": [],
+        "excludedObservations": [],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72"
+    },
+    "limits": "A CIWA-Ar de 1989 quantifica a gravidade da abstinência alcoólica por 10 itens. A disponibilidade do total não confirma indicação ou dose de benzodiazepínico, nível de cuidado ou aplicabilidade a pacientes que não possam ser avaliados adequadamente. Esses elementos requerem o protocolo clínico e a população da versão utilizada.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.766Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não traz pontos, faixas, exclusões, população incapaz de responder, doses de benzodiazepínico ou limiares de cuidado."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ciwa-ar/calculator.js",
+    "bytes": 7693,
+    "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e405724743d804f72422a56f30b5a87d307145030ba54488c6c439c1eab840e5",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "20bb78e160c0e742c6d26cd20a72b66bdcdfdb6a1a14dcbccd258e4e4bde4aee",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "20bb78e160c0e742c6d26cd20a72b66bdcdfdb6a1a14dcbccd258e4e4bde4aee",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

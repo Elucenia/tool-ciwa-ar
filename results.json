@@ -1,0 +1,370 @@
+{
+  "id": "ciwa-ar",
+  "at": "2026-10-05T17:29:10.907Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/ciwa-ar/calculator.js",
+    "bytes": 7693,
+    "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72"
+  },
+  "cases": [
+    {
+      "name": "Sem sintomas: 0",
+      "input": {
+        "nausea": "0",
+        "tremor": "0",
+        "sudorese": "0",
+        "ansiedade": "0",
+        "agitacao": "0",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "cefaleia": "0",
+        "orientacao": "0"
+      },
+      "obtained": {
+        "id": "ciwa-ar",
+        "main": [
+          "0",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 67",
+          "obtained": "de 67",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sintomas leves: 7 (leve)",
+      "input": {
+        "nausea": "1",
+        "tremor": "1",
+        "sudorese": "1",
+        "ansiedade": "2",
+        "agitacao": "1",
+        "cefaleia": "1",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "orientacao": "0"
+      },
+      "obtained": {
+        "id": "ciwa-ar",
+        "main": [
+          "7",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7",
+          "obtained": "7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 67",
+          "obtained": "de 67",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+      "input": {
+        "nausea": "1",
+        "tremor": "4",
+        "sudorese": "4",
+        "ansiedade": "4",
+        "agitacao": "3",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "cefaleia": "0",
+        "orientacao": "0"
+      },
+      "obtained": {
+        "id": "ciwa-ar",
+        "main": [
+          "16",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "16",
+          "obtained": "16",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 67",
+          "obtained": "de 67",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+      "input": {
+        "tremor": "7",
+        "sudorese": "4",
+        "ansiedade": "5",
+        "agitacao": "4",
+        "tatil": "3",
+        "visual": "2",
+        "orientacao": "2",
+        "nausea": "0",
+        "auditivo": "0",
+        "cefaleia": "0"
+      },
+      "obtained": {
+        "id": "ciwa-ar",
+        "main": [
+          "27",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 27
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 27,
+          "obtained": 27,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 27,
+          "obtained": 27,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "27",
+          "obtained": "27",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 67",
+          "obtained": "de 67",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 34,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

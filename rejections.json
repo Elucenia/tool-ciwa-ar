@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nausea",
+    "input": {
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nausea"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nausea",
+    "input": {
+      "nausea": "",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nausea"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option nausea",
+    "input": {
+      "nausea": "__ELUCENIA_INVALID_OPTION__",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "nausea"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tremor",
+    "input": {
+      "nausea": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tremor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tremor",
+    "input": {
+      "nausea": "0",
+      "tremor": "",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tremor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tremor",
+    "input": {
+      "nausea": "0",
+      "tremor": "__ELUCENIA_INVALID_OPTION__",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tremor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sudorese",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sudorese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sudorese",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sudorese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option sudorese",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "__ELUCENIA_INVALID_OPTION__",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "sudorese"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ansiedade",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ansiedade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ansiedade",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ansiedade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option ansiedade",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "__ELUCENIA_INVALID_OPTION__",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "ansiedade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field agitacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "agitacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field agitacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "agitacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option agitacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "__ELUCENIA_INVALID_OPTION__",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "agitacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tatil",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tatil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tatil",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tatil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tatil",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "__ELUCENIA_INVALID_OPTION__",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tatil"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field auditivo",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "auditivo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field auditivo",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "auditivo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option auditivo",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "__ELUCENIA_INVALID_OPTION__",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "auditivo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field visual",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "visual"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field visual",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "visual"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option visual",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "__ELUCENIA_INVALID_OPTION__",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "visual"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cefaleia",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cefaleia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cefaleia",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cefaleia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option cefaleia",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "__ELUCENIA_INVALID_OPTION__",
+      "orientacao": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "cefaleia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field orientacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "orientacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field orientacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "orientacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option orientacao",
+    "input": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "orientacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

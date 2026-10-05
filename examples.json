@@ -1,6 +1,21 @@
 [
   {
-    "label": "Sem sintomas: 0",
+    "id": "ciwa-ar",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sem sintomas: 0",
+    "originalInput": {
+      "nausea": "0",
+      "tremor": "0",
+      "sudorese": "0",
+      "ansiedade": "0",
+      "agitacao": "0",
+      "tatil": "0",
+      "auditivo": "0",
+      "visual": "0",
+      "cefaleia": "0",
+      "orientacao": "0"
+    },
     "input": {
       "nausea": "0",
       "tremor": "0",
@@ -17,22 +32,38 @@
       "score": 0,
       "level": "low"
     },
-    "originalInput": {
-      "nausea": "0",
-      "tremor": "0",
-      "sudorese": "0",
-      "ansiedade": "0",
-      "agitacao": "0",
-      "tatil": "0",
-      "auditivo": "0",
-      "visual": "0",
-      "cefaleia": "0",
-      "orientacao": "0"
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 67"
+      ],
+      "label": "CIWA-Ar",
+      "raw": {
+        "score": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sintomas leves: 7 (leve)",
+    "id": "ciwa-ar",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Sintomas leves: 7 (leve)",
+    "originalInput": {
+      "nausea": "1",
+      "tremor": "1",
+      "sudorese": "1",
+      "ansiedade": "2",
+      "agitacao": "1",
+      "cefaleia": "1"
+    },
     "input": {
       "nausea": "1",
       "tremor": "1",
@@ -49,23 +80,37 @@
       "score": 7,
       "level": "low"
     },
-    "originalInput": {
-      "nausea": "1",
-      "tremor": "1",
-      "sudorese": "1",
-      "ansiedade": "2",
-      "agitacao": "1",
-      "cefaleia": "1"
+    "recordedResult": {
+      "main": [
+        "7",
+        "de 67"
+      ],
+      "label": "CIWA-Ar",
+      "raw": {
+        "score": 7
+      }
     },
-    "expandedZeroOptions": [
-      "tatil",
-      "auditivo",
-      "visual",
-      "orientacao"
-    ]
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+    "id": "ciwa-ar",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+    "originalInput": {
+      "nausea": "1",
+      "tremor": "4",
+      "sudorese": "4",
+      "ansiedade": "4",
+      "agitacao": "3"
+    },
     "input": {
       "nausea": "1",
       "tremor": "4",
@@ -82,23 +127,39 @@
       "score": 16,
       "level": "mid"
     },
-    "originalInput": {
-      "nausea": "1",
-      "tremor": "4",
-      "sudorese": "4",
-      "ansiedade": "4",
-      "agitacao": "3"
+    "recordedResult": {
+      "main": [
+        "16",
+        "de 67"
+      ],
+      "label": "CIWA-Ar",
+      "raw": {
+        "score": 16
+      }
     },
-    "expandedZeroOptions": [
-      "tatil",
-      "auditivo",
-      "visual",
-      "cefaleia",
-      "orientacao"
-    ]
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+    "id": "ciwa-ar",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+    "originalInput": {
+      "tremor": "7",
+      "sudorese": "4",
+      "ansiedade": "5",
+      "agitacao": "4",
+      "tatil": "3",
+      "visual": "2",
+      "orientacao": "2"
+    },
     "input": {
       "tremor": "7",
       "sudorese": "4",
@@ -115,19 +176,23 @@
       "score": 27,
       "level": "high"
     },
-    "originalInput": {
-      "tremor": "7",
-      "sudorese": "4",
-      "ansiedade": "5",
-      "agitacao": "4",
-      "tatil": "3",
-      "visual": "2",
-      "orientacao": "2"
+    "recordedResult": {
+      "main": [
+        "27",
+        "de 67"
+      ],
+      "label": "CIWA-Ar",
+      "raw": {
+        "score": 27
+      }
     },
-    "expandedZeroOptions": [
-      "nausea",
-      "auditivo",
-      "cefaleia"
-    ]
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
