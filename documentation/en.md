@@ -180,3 +180,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Mild withdrawal (< 10)
+
+Usually does not require additional medication; continue periodic reassessment.
+
+
+### 2
+
+Mild withdrawal (< 10)
+
+Usually does not require additional medication; continue periodic reassessment.
+
+
+### 3
+
+Moderate withdrawal (10 to 19)
+
+Symptom-triggered benzodiazepine and frequent scale reassessment.
+
+
+### 4
+
+Severe withdrawal (≥ 20)
+
+Hospital treatment, with benzodiazepine and monitoring for seizures and delirium tremens.
+

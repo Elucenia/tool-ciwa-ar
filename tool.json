@@ -348,7 +348,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CIWAAr/Sullivan 1989:10 itens, total 0–67; orientação 0–4",
-    "implementationVersion": "ciwa-ar@native-2026-10-03+29e2b50399fd",
+    "implementationVersion": "ciwa-ar@native-2026-10-05+ca62c4a37f10",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2597811/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -664,7 +664,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72"
+      "implementationHash": "ca62c4a37f10e5bed1d6670bf8b6c84477385420b9e393b0985813df6931c8b6",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "ciwa-ar@native-2026-10-03+29e2b50399fd",
+          "previousImplementationHash": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+          "implementationHash": "ca62c4a37f10e5bed1d6670bf8b6c84477385420b9e393b0985813df6931c8b6",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "803884dbfda8689c86d94b4f420d4e856b78a94e1dedfb2103b81529cff2cf3c",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A CIWA-Ar de 1989 quantifica a gravidade da abstinência alcoólica por 10 itens. A disponibilidade do total não confirma indicação ou dose de benzodiazepínico, nível de cuidado ou aplicabilidade a pacientes que não possam ser avaliados adequadamente. Esses elementos requerem o protocolo clínico e a população da versão utilizada.",
     "sourceLimitEvidence": {
@@ -683,20 +711,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/ciwa-ar/calculator.js",
-    "bytes": 7693,
-    "sha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72"
+    "bytes": 7898,
+    "sha256": "ca62c4a37f10e5bed1d6670bf8b6c84477385420b9e393b0985813df6931c8b6"
   },
-  "sourceToolSha256": "e405724743d804f72422a56f30b5a87d307145030ba54488c6c439c1eab840e5",
+  "sourceToolSha256": "3b346d487b8974ca18995a7f1c8984448011f5897065001cb41f16d18a525e06",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "20bb78e160c0e742c6d26cd20a72b66bdcdfdb6a1a14dcbccd258e4e4bde4aee",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "20bb78e160c0e742c6d26cd20a72b66bdcdfdb6a1a14dcbccd258e4e4bde4aee",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

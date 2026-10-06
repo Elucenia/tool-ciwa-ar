@@ -1,0 +1,707 @@
+{
+  "id": "ciwa-ar",
+  "implementationVersion": "ciwa-ar@native-2026-10-05+ca62c4a37f10",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinência leve (< 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em geral não requer medicação adicional; mantenha a reavaliação periódica.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinência leve (< 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em geral não requer medicação adicional; mantenha a reavaliação periódica.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinência moderada (10 a 19)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Benzodiazepínico guiado por sintomas e reavaliação frequente da escala.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinência grave (≥ 20)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Tratamento em ambiente hospitalar, com benzodiazepínico e vigilância para convulsões e delirium tremens.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild withdrawal (< 10)",
+            "locale": "en",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Usually does not require additional medication; continue periodic reassessment.",
+            "locale": "en",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild withdrawal (< 10)",
+            "locale": "en",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Usually does not require additional medication; continue periodic reassessment.",
+            "locale": "en",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate withdrawal (10 to 19)",
+            "locale": "en",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "Symptom-triggered benzodiazepine and frequent scale reassessment.",
+            "locale": "en",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe withdrawal (≥ 20)",
+            "locale": "en",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "Hospital treatment, with benzodiazepine and monitoring for seizures and delirium tremens.",
+            "locale": "en",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinencia leve (< 10)",
+            "locale": "es",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Por lo general no requiere medicación adicional; mantener la reevaluación periódica.",
+            "locale": "es",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinencia leve (< 10)",
+            "locale": "es",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Por lo general no requiere medicación adicional; mantener la reevaluación periódica.",
+            "locale": "es",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinencia moderada (10 a 19)",
+            "locale": "es",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "Benzodiacepina guiada por síntomas y reevaluación frecuente de la escala.",
+            "locale": "es",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abstinencia grave (≥ 20)",
+            "locale": "es",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "Tratamiento en ambiente hospitalario, con benzodiacepina y vigilancia de convulsiones y delirium tremens.",
+            "locale": "es",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sevrage léger (< 10)",
+            "locale": "fr",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Ne nécessite généralement pas de médicament supplémentaire ; poursuivre la réévaluation périodique.",
+            "locale": "fr",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sevrage léger (< 10)",
+            "locale": "fr",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Ne nécessite généralement pas de médicament supplémentaire ; poursuivre la réévaluation périodique.",
+            "locale": "fr",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sevrage modéré (10 à 19)",
+            "locale": "fr",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "Benzodiazépine guidée par les symptômes et réévaluation fréquente de l’échelle.",
+            "locale": "fr",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sevrage sévère (≥ 20)",
+            "locale": "fr",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "Traitement en milieu hospitalier, avec benzodiazépine et surveillance des convulsions et du delirium tremens.",
+            "locale": "fr",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichter Entzug (< 10)",
+            "locale": "de",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Erfordert in der Regel keine zusätzliche Medikation; die regelmäßige Neubewertung fortsetzen.",
+            "locale": "de",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichter Entzug (< 10)",
+            "locale": "de",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "Erfordert in der Regel keine zusätzliche Medikation; die regelmäßige Neubewertung fortsetzen.",
+            "locale": "de",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßiger Entzug (10 bis 19)",
+            "locale": "de",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "Symptomgesteuerte Benzodiazepintherapie und häufige erneute Skalenbewertung.",
+            "locale": "de",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwerer Entzug (≥ 20)",
+            "locale": "de",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "Behandlung im Krankenhaus mit Benzodiazepin und Überwachung auf Krampfanfälle und Delirium tremens.",
+            "locale": "de",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Astinenza lieve (< 10)",
+            "locale": "it",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "In genere non richiede farmaci aggiuntivi; mantenere la rivalutazione periodica.",
+            "locale": "it",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Astinenza lieve (< 10)",
+            "locale": "it",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "In genere non richiede farmaci aggiuntivi; mantenere la rivalutazione periodica.",
+            "locale": "it",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Astinenza moderata (10 a 19)",
+            "locale": "it",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "Benzodiazepina guidata dai sintomi e rivalutazione frequente della scala.",
+            "locale": "it",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Astinenza grave (≥ 20)",
+            "locale": "it",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "Trattamento in ambiente ospedaliero, con benzodiazepina e sorveglianza per convulsioni e delirium tremens.",
+            "locale": "it",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "انسحاب خفيف (< 10)",
+            "locale": "ar",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "لا يتطلب عادةً دواءً إضافيًا؛ استمر في إعادة التقييم الدوري.",
+            "locale": "ar",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "انسحاب خفيف (< 10)",
+            "locale": "ar",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "لا يتطلب عادةً دواءً إضافيًا؛ استمر في إعادة التقييم الدوري.",
+            "locale": "ar",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "انسحاب متوسط (10 إلى 19)",
+            "locale": "ar",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "بنزوديازيبين موجَّه بالأعراض وإعادة تقييم متكررة للمقياس.",
+            "locale": "ar",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "انسحاب شديد (≥ 20)",
+            "locale": "ar",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "علاج في المستشفى، مع بنزوديازيبين ومراقبة للتشنجات والهذيان الارتعاشي.",
+            "locale": "ar",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度戒断（< 10）",
+            "locale": "zh",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "通常不需要额外用药；继续定期复评。",
+            "locale": "zh",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度戒断（< 10）",
+            "locale": "zh",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "通常不需要额外用药；继续定期复评。",
+            "locale": "zh",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度戒断（10 至 19）",
+            "locale": "zh",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "按症状指导使用苯二氮䓬类，并频繁复评量表。",
+            "locale": "zh",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度戒断（≥ 20）",
+            "locale": "zh",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "住院治疗，使用苯二氮䓬类，并监测癫痫发作和震颤谵妄。",
+            "locale": "zh",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度離脱（< 10）",
+            "locale": "ja",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "通常は追加の薬物療法を要しない。定期的な再評価を継続する。",
+            "locale": "ja",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度離脱（< 10）",
+            "locale": "ja",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "通常は追加の薬物療法を要しない。定期的な再評価を継続する。",
+            "locale": "ja",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度離脱（10～19）",
+            "locale": "ja",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "症状に応じたベンゾジアゼピン投与と、尺度の頻回再評価。",
+            "locale": "ja",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度離脱（≥ 20）",
+            "locale": "ja",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "入院下での治療。ベンゾジアゼピンを用い、けいれんと振戦せん妄を監視する。",
+            "locale": "ja",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sem sintomas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्का विथड्रॉल (< 10)",
+            "locale": "hi",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "आमतौर पर अतिरिक्त दवा की आवश्यकता नहीं होती; आवधिक पुनर्मूल्यांकन जारी रखें।",
+            "locale": "hi",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sintomas leves: 7 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्का विथड्रॉल (< 10)",
+            "locale": "hi",
+            "template": "documented-authored-6f5bc3b06be8692b40f4"
+          },
+          "note": {
+            "text": "आमतौर पर अतिरिक्त दवा की आवश्यकता नहीं होती; आवधिक पुनर्मूल्यांकन जारी रखें।",
+            "locale": "hi",
+            "template": "documented-authored-74560259b03442442aff"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम विथड्रॉल (10 से 19)",
+            "locale": "hi",
+            "template": "documented-authored-04383e6ad20385dfa349"
+          },
+          "note": {
+            "text": "लक्षण-निर्देशित बेंज़ोडायज़ेपीन और स्केल का बार-बार पुनर्मूल्यांकन।",
+            "locale": "hi",
+            "template": "documented-authored-9a5b85d339a2efd3b26d"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर विथड्रॉल (≥ 20)",
+            "locale": "hi",
+            "template": "documented-authored-056e258b8a8534dda4b9"
+          },
+          "note": {
+            "text": "अस्पताल में उपचार, बेंज़ोडायज़ेपीन के साथ, तथा दौरे और डिलीरियम ट्रेमेन्स की निगरानी।",
+            "locale": "hi",
+            "template": "documented-authored-cb6fa274ac9e40ac9997"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

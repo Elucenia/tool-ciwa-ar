@@ -180,3 +180,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Abstinência leve (< 10)
+
+Em geral não requer medicação adicional; mantenha a reavaliação periódica.
+
+
+### 2
+
+Abstinência leve (< 10)
+
+Em geral não requer medicação adicional; mantenha a reavaliação periódica.
+
+
+### 3
+
+Abstinência moderada (10 a 19)
+
+Benzodiazepínico guiado por sintomas e reavaliação frequente da escala.
+
+
+### 4
+
+Abstinência grave (≥ 20)
+
+Tratamento em ambiente hospitalar, com benzodiazepínico e vigilância para convulsões e delirium tremens.
+

@@ -1,0 +1,248 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "ciwa-ar",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "2325992b7a24f6c1dbb366cddcc4b23eceb0a742",
+    "oldEngineSha256": "29e2b50399fd602156e3e8dd7b0457639733c5255389cf81eef0ba20458fcf72",
+    "currentEngineSha256": "ca62c4a37f10e5bed1d6670bf8b6c84477385420b9e393b0985813df6931c8b6"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sem sintomas: 0",
+      "input": {
+        "nausea": "0",
+        "tremor": "0",
+        "sudorese": "0",
+        "ansiedade": "0",
+        "agitacao": "0",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "cefaleia": "0",
+        "orientacao": "0"
+      },
+      "publicOutput": {
+        "id": "ciwa-ar",
+        "main": [
+          "0",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "level": "low",
+        "verdict": "Abstinência leve (&lt; 10)",
+        "note": "Em geral não requer medicação adicional; mantenha a reavaliação periódica.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Sintomas leves: 7 (leve)",
+      "input": {
+        "nausea": "1",
+        "tremor": "1",
+        "sudorese": "1",
+        "ansiedade": "2",
+        "agitacao": "1",
+        "cefaleia": "1",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "orientacao": "0"
+      },
+      "publicOutput": {
+        "id": "ciwa-ar",
+        "main": [
+          "7",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "level": "low",
+        "verdict": "Abstinência leve (&lt; 10)",
+        "note": "Em geral não requer medicação adicional; mantenha a reavaliação periódica.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Tremor e sudorese moderados, ansiedade, agitação e náusea leve: 16 (moderada)",
+      "input": {
+        "nausea": "1",
+        "tremor": "4",
+        "sudorese": "4",
+        "ansiedade": "4",
+        "agitacao": "3",
+        "tatil": "0",
+        "auditivo": "0",
+        "visual": "0",
+        "cefaleia": "0",
+        "orientacao": "0"
+      },
+      "publicOutput": {
+        "id": "ciwa-ar",
+        "main": [
+          "16",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 16,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "16",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "level": "mid",
+        "verdict": "Abstinência moderada (10 a 19)",
+        "note": "Benzodiazepínico guiado por sintomas e reavaliação frequente da escala.",
+        "raw": {
+          "score": 16
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Tremor grave, alucinações táteis e visuais, desorientação: 27 (grave)",
+      "input": {
+        "tremor": "7",
+        "sudorese": "4",
+        "ansiedade": "5",
+        "agitacao": "4",
+        "tatil": "3",
+        "visual": "2",
+        "orientacao": "2",
+        "nausea": "0",
+        "auditivo": "0",
+        "cefaleia": "0"
+      },
+      "publicOutput": {
+        "id": "ciwa-ar",
+        "main": [
+          "27",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "raw": {
+          "score": 27
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 27,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "27",
+          "de 67"
+        ],
+        "label": "CIWA-Ar",
+        "level": "high",
+        "verdict": "Abstinência grave (≥ 20)",
+        "note": "Tratamento em ambiente hospitalar, com benzodiazepínico e vigilância para convulsões e delirium tremens.",
+        "raw": {
+          "score": 27
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

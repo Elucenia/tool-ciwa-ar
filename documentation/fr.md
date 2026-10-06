@@ -180,3 +180,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Sevrage léger (< 10)
+
+Ne nécessite généralement pas de médicament supplémentaire ; poursuivre la réévaluation périodique.
+
+
+### 2
+
+Sevrage léger (< 10)
+
+Ne nécessite généralement pas de médicament supplémentaire ; poursuivre la réévaluation périodique.
+
+
+### 3
+
+Sevrage modéré (10 à 19)
+
+Benzodiazépine guidée par les symptômes et réévaluation fréquente de l’échelle.
+
+
+### 4
+
+Sevrage sévère (≥ 20)
+
+Traitement en milieu hospitalier, avec benzodiazépine et surveillance des convulsions et du delirium tremens.
+
